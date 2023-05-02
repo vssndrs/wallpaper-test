@@ -1,0 +1,156 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "name": "Animals"
+        },
+        {
+            "id": 2,
+            "name": "Nature"
+        },
+        {
+            "id": 3,
+            "name": "Cars"
+        }
+    ],
+    "images":[
+    {
+        "id": "1",
+        "name": "sunlight_nap-wallpaper",
+        "url": "https://res.cloudinary.com/dpl0wn9vl/image/upload/v1683024263/wallpapers/sunlight_nap-wallpaper-1024x768_rokjwf.jpg",
+        "categoryId": 1
+    },
+    {
+        "id": "2",
+        "name": "snarling_tiger-wallpaper",
+        "url": "https://res.cloudinary.com/dpl0wn9vl/image/upload/v1683024252/wallpapers/snarling_tiger-wallpaper-1024x768_xfchqw.jpg",
+        "categoryId": 1
+    },
+    {
+        "id": "3",
+        "name": "sad_eyes_2-wallpaper",
+        "url": "https://res.cloudinary.com/dpl0wn9vl/image/upload/v1683024246/wallpapers/sad_eyes_2-wallpaper-1024x768_f3f6gr.jpg",
+        "categoryId": 1
+    },
+    {
+        "id": "4",
+        "name": "lion_5-wallpaper",
+        "url": "https://res.cloudinary.com/dpl0wn9vl/image/upload/v1683024237/wallpapers/lion_5-wallpaper-1024x768_s4rpbi.jpg",
+        "categoryId": 1
+    },
+    {
+        "id": "5",
+        "name": "white_leopard-wallpaper",
+        "url": "https://res.cloudinary.com/dpl0wn9vl/image/upload/v1683024162/wallpapers/white_leopard-wallpaper-1024x768_jqgqzl.jpg",
+        "categoryId": 1
+    },
+    {
+        "id": "6",
+        "name": "cute_pembroke_welsh_corgi_puppies_running-wallpaper",
+        "url": "https://res.cloudinary.com/dpl0wn9vl/image/upload/v1683024162/wallpapers/cute_pembroke_welsh_corgi_puppies_running-wallpaper-1024x768_vjv8me.jpg",
+        "categoryId": 1
+    },
+    {
+        "id": "7",
+        "name": "cute_husky_puppy-wallpaper",
+        "url": "https://res.cloudinary.com/dpl0wn9vl/image/upload/v1683024162/wallpapers/cute_husky_puppy-wallpaper-1024x768_l8ppdf.jpg",
+        "categoryId": 1
+    },
+    {
+        "id": "8",
+        "name": "cute_rottweiler_puppy-wallpaper",
+        "url": "https://res.cloudinary.com/dpl0wn9vl/image/upload/v1683024162/wallpapers/cute_rottweiler_puppy-wallpaper-1024x768_ajq0gm.jpg",
+        "categoryId": 1
+    },
+    {
+        "id": "9",
+        "name": "white_wolves_pack_2-wallpaper",
+        "url": "https://res.cloudinary.com/dpl0wn9vl/image/upload/v1683024162/wallpapers/white_wolves_pack_2-wallpaper-1024x768_xayxx3.jpg",
+        "categoryId": 1
+    },
+    {
+        "id": "10",
+        "name": "white_tiger-wallpaper",
+        "url": "https://res.cloudinary.com/dpl0wn9vl/image/upload/v1683024162/wallpapers/white_tiger-wallpaper-1024x768_hg10a7.jpg",
+        "categoryId": 1
+    },
+    {
+        "id": "11",
+        "name": "dolphin_6-wallpaper",
+        "url": "https://res.cloudinary.com/dpl0wn9vl/image/upload/v1683024162/wallpapers/dolphin_6-wallpaper-1024x768_la4stn.jpg",
+        "categoryId": 1
+    },
+    {
+        "id": "12",
+        "name": "alaska_range_beautiful_mountain_landscape-wallpaper",
+        "url": "https://res.cloudinary.com/dpl0wn9vl/image/upload/v1683029036/wallpapers/alaska_range_beautiful_mountain_landscape-wallpaper-1024x768_wtjpwj.jpg",
+        "categoryId": 2
+    },
+    {
+        "id": "13",
+        "name": "rainforest_waterfall-wallpaper",
+        "url": "https://res.cloudinary.com/dpl0wn9vl/image/upload/v1683029064/wallpapers/rainforest_waterfall-wallpaper-1024x768_oq4ord.jpg",
+        "categoryId": 2
+    },
+    {
+        "id": "14",
+        "name": "dream_places-wallpaper",
+        "url": "https://res.cloudinary.com/dpl0wn9vl/image/upload/v1683029091/wallpapers/dream_places-wallpaper-1024x768_g0lrdy.jpg",
+        "categoryId": 2
+    },
+    {
+        "id": "15",
+        "name": "beach_nature_7-wallpaper",
+        "url": "https://res.cloudinary.com/dpl0wn9vl/image/upload/v1683029125/wallpapers/beach_nature_7-wallpaper-1024x768_nlmpbl.jpg",
+        "categoryId": 2
+    },
+    {
+        "id": "16",
+        "name": "hills_landscape-wallpaper",
+        "url": "https://res.cloudinary.com/dpl0wn9vl/image/upload/v1683029151/wallpapers/hills_landscape-wallpaper-1024x768_kemqle.jpg",
+        "categoryId": 2
+    },
+    {
+        "id": "17",
+        "name": "nature_245-wallpaper",
+        "url": "https://res.cloudinary.com/dpl0wn9vl/image/upload/v1683029174/wallpapers/nature_245-wallpaper-1024x768_l8ofml.jpg",
+        "categoryId": 2
+    },
+    {
+        "id": "18",
+        "name": "lamborghini_aventador_9",
+        "url": "https://res.cloudinary.com/dpl0wn9vl/image/upload/v1683029480/wallpapers/lamborghini_aventador_9-wallpaper-1024x768_ftatdf.jpg",
+        "categoryId": 3
+    },
+    {
+        "id": "19",
+        "name": "red_lamborghini_aventador_s_roadster-wallpaper",
+        "url": "https://res.cloudinary.com/dpl0wn9vl/image/upload/v1683029351/wallpapers/red_lamborghini_aventador_s_roadster-wallpaper-1024x768_y7quu3.jpg",
+        "categoryId": 3
+    },
+    {
+        "id": "20",
+        "name": "lamborghini_dark-wallpaper",
+        "url": "https://res.cloudinary.com/dpl0wn9vl/image/upload/v1683029432/wallpapers/lamborghini_dark-wallpaper-1024x768_xpaimt.jpg",
+        "categoryId": 3
+    },
+    {
+        "id": "21",
+        "name": "lamborghini_47-wallpaper",
+        "url": "https://res.cloudinary.com/dpl0wn9vl/image/upload/v1683029453/wallpapers/lamborghini_47-wallpaper-1024x768_nakcyu.jpg",
+        "categoryId": 3
+    },
+    {
+        "id": "22",
+        "name": "black_lamborghini_aventador_supercar-wallpaper",
+        "url": "https://res.cloudinary.com/dpl0wn9vl/image/upload/v1683029516/wallpapers/black_lamborghini_aventador_supercar-wallpaper-1024x768_ubajkg.jpg",
+        "categoryId": 3
+    },
+    {
+        "id": "23",
+        "name": "lamborghini_aventador-wallpaper",
+        "url": "https://res.cloudinary.com/dpl0wn9vl/image/upload/v1683029538/wallpapers/lamborghini_aventador-wallpaper-1024x768_dfosrc.jpg",
+        "categoryId": 3
+    }
+]
+}
