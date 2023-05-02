@@ -1,0 +1,21 @@
+<main class="container my-3">
+    <div class="row my-3">
+        <div class="col-12">
+            <h1 class="text-center">Válasszon kategóriát!</h1>
+        </div>
+    </div>
+    <div class="row justify-content-around d-flex">
+        <div class="col-12 col-lg-3 card h-100 shadow mb-2 p-0" *ngFor="let category of categories"
+            style="cursor: pointer;" routerLink="{{category.id}}">
+            <img src="{{imagePrefix}}{{thumbPrefix}}{{category.images[0].url}}" alt="{{category.images[0].name}}"
+                class="card-img-top">
+            <div class="card-body text-center">
+                <p class="text-uppercase">{{category.name}}</p>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</main>

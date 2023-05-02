@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  thumbPrefix: 'c_thumb,w_300,g_face/',
+  imagePrefix: 'https://res.cloudinary.com/dpl0wn9vl/image/upload/',
 };
 
 /*

@@ -1,1 +1,22 @@
-<p>navbar works!</p>
+<nav class="navbar navbar-dark navbar-expand-custom bg-black">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+            <div>
+                <ul class="navbar-nav">
+                    <a class="nav-link" aria-current="page" routerLinkActive="activated" routerLink="">Főoldal</a>
+                    <a class="nav-link" routerLinkActive="activated" routerLink="categories">Kategóriák</a>
+                </ul>
+            </div>
+            <div>
+                <ul class="navbar-nav">
+                    <a class="nav-link" routerLinkActive="activated" routerLink="favorites">Kedvencek
+                        <span class="badge badge-pill badge-danger">5</span></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
