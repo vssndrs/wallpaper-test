@@ -9,9 +9,38 @@ import { Observable } from 'rxjs';
 })
 export class ImageService {
 
+  favoriteImages: Image[] = [];
+
   constructor(
     private http: HttpClient
   ) { }
+
+  saveFavoriteImage(image: Image): void {
+    this.favoriteImages.push(image);
+    this.saveFavoriteImages();
+  }
+
+  removeFavoriteImage(image: Image): void {
+    this.favoriteImages = this.favoriteImages.filter((img) => img.id !== image.id);
+    this.saveFavoriteImages();
+  }
+
+  setFavoriteImages(images: Image[]): void {
+    this.favoriteImages = images;
+  }
+
+  saveFavoriteImages(): void {
+    localStorage.setItem('favoriteImages', JSON.stringify(this.favoriteImages));
+  }
+
+  clearFavoriteImages(): void {
+    this.favoriteImages = [];
+    localStorage.removeItem('favoriteImages');
+  }
+
+  getFavoriteImages(): Image[] {
+    return this.favoriteImages;
+  }
 
   getCategories(): Observable<Category[]> {
     return this.http.get<Category[]>('http://localhost:3000/categories?_embed=images');

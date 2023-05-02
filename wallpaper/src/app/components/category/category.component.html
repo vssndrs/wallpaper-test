@@ -8,7 +8,7 @@
                         target="_blank">
                         Letöltés
                     </a>
-                    <button class="btn btn-primary m-3">Kedvencekbe</button>
+                    <button class="btn btn-primary m-3" (click)="saveToFavorite(chosenImage)">Kedvencekbe</button>
                 </div>
             </div>
         </div>
@@ -17,7 +17,7 @@
     <div class="row justify-content-around">
         <div class="col-12 col-lg-2 card h-100 shadow mx-3 mb-2 p-0" *ngFor="let image of images">
             <img style="cursor: pointer;" src="{{imagePrefix}}{{thumbPrefix}}{{image.url}}"
-                alt="{{image.name.length < 10 ? image.name : image.name.substring(0, 10) + '...'}}" class="card-img-top"
+                alt="{{image.name}}" class="card-img-top"
                 (click)="chooseImage(image)">
             <div class="card-body text-center">
                 <p class="text-uppercase">{{image.name.length < 10 ? image.name : image.name.substring(0, 10) + '...'}}</p>
@@ -26,7 +26,7 @@
     </div>
     <div class="row">
         <mat-paginator #paginator class="demo-paginator" (page)="handlePageEvent($event)" [length]="numberOfImages"
-            [pageSize]="5" [showFirstLastButtons]="true" [pageIndex]="pageIndex" aria-label="Select page">
+            [pageSize]="pageSize" [showFirstLastButtons]="true" [pageIndex]="pageIndex" aria-label="Select page">
         </mat-paginator>
     </div>
 </main>

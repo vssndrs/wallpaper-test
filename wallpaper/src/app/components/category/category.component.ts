@@ -74,4 +74,10 @@ export class CategoryComponent implements OnInit {
     this.getImages(this.categoryId, this.pageIndex, this.pageSize);
   }
 
+  saveToFavorite(image: Image) {
+    if(!this.imageService.getFavoriteImages().find(img => img.id === image.id)) {
+    this.imageService.saveFavoriteImage(image);
+    }
+  }
+
 }

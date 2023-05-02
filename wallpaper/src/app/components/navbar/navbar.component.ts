@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Image } from 'src/app/models/image';
+import { ImageService } from 'src/app/services/image.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  favoriteImages!: Image[];
+
+  constructor(
+    private imageService: ImageService
+  ) { }
 
   ngOnInit(): void {
+    if (localStorage.getItem('favoriteImages')) {
+      let images = JSON.parse(localStorage.getItem('favoriteImages')!);
+      this.imageService.setFavoriteImages(images);
+    }
+    this.favoriteImages = this.imageService.getFavoriteImages();
   }
+
+  
 
 }
