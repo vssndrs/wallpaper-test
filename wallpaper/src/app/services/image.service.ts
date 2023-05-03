@@ -35,7 +35,7 @@ export class ImageService {
   }
 
   clearFavoriteImages(): void {
-    this.favoriteImages = [];
+    this.favoriteImages.splice(0, this.favoriteImages.length);
     localStorage.removeItem('favoriteImages');
   }
 
@@ -47,7 +47,10 @@ export class ImageService {
     }
   }
 
-  getCategories(): Observable<Category[]> {
+  getCategories(limit?:number): Observable<Category[]> {
+    if (limit) {
+      return this.http.get<Category[]>(`http://localhost:3000/categories?_embed=images&_limit=${limit}`);
+    }
     return this.http.get<Category[]>('http://localhost:3000/categories?_embed=images');
   }
 
@@ -57,18 +60,18 @@ export class ImageService {
 
   getImagesByCategory(id: number, page?: number, limit?: number): Observable<Image[]> {
     if (page && limit) {
-    return this.http.get<Image[]>(`http://localhost:3000/images?categoryId=${id}&_page=${page}&_limit=${limit}`)
+    return this.http.get<Image[]>(`http://localhost:3000/images?categoryId=${id}&_page=${page}&_limit=${limit}&_expand=category`)
     } else {
-      return this.http.get<Image[]>(`http://localhost:3000/images?categoryId=${id}`)
+      return this.http.get<Image[]>(`http://localhost:3000/images?categoryId=${id}&_expand=category`)
     }
   }
 
   getImageById(id: number): Observable<Image> {
-    return this.http.get<Image>(`http://localhost:3000/images/${id}`);
+    return this.http.get<Image>(`http://localhost:3000/images/${id}&_expand=category`);
   }
 
   getFirstImageByCategory(id: number): Observable<Image[]> {
-    return this.http.get<Image[]>(`http://localhost:3000/images?categoryId=${id}&_limit=1`);
+    return this.http.get<Image[]>(`http://localhost:3000/images?categoryId=${id}&_limit=1&_expand=category`);
   }
 
   getCategoryById(id: number): Observable<Category> {

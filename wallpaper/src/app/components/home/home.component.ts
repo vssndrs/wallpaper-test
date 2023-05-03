@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.imageService.getCategories().subscribe({
+    this.imageService.getCategories(3).subscribe({
       next: categories => this.categories = categories
     })
   }

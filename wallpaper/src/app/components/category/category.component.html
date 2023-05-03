@@ -1,4 +1,4 @@
-<div class="row mt-1">
+<div class="row mt-1 w-100">
     <div class="col-9"></div>
     <nav class="col-3" aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -13,7 +13,7 @@
     <div class="row mb-5">
         <div class="container justify-content-center">
             <div class="row">
-                <img [src]="imagePrefix+chosenImage.url" [alt]="chosenImage.name" class="img-fluid col-12 col-lg-9">
+                <img [src]="imagePrefix+chosenImage.url" [alt]="chosenImage.name" style="object-fit:contain; max-height: 70vh;" class="img-fluid col-12 col-lg-9">
                 <div class="col-12 col-lg-3 d-flex flex-column justify-content-center">
                     <a class="btn btn-primary m-3" [href]="imagePrefix+chosenImage.url" download="{{chosenImage.name}}"
                         target="_blank">
@@ -32,12 +32,13 @@
             <div class="card-body text-center">
                 <p class="text-uppercase">{{image.name.length < 10 ? image.name : image.name.substring(0, 10) + '...'
                         }}</p>
+                <p>Kiterjesztés: {{image.url.substring(image.url.indexOf('.')+1).toUpperCase()}}</p>
             </div>
         </div>
     </div>
+    <div class="row">
+        <mat-paginator #paginator hidePageSize="true" (page)="handlePageEvent($event)" [length]="numberOfImages"
+            [pageSize]="pageSize" [showFirstLastButtons]="true" [pageIndex]="pageIndex" aria-label="Select page">
+        </mat-paginator>
+    </div>
 </main>
-<div class="row">
-    <mat-paginator #paginator hidePageSize="true" (page)="handlePageEvent($event)" [length]="numberOfImages"
-        [pageSize]="pageSize" [showFirstLastButtons]="true" [pageIndex]="pageIndex" aria-label="Select page">
-    </mat-paginator>
-</div>

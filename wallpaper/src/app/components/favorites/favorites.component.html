@@ -2,7 +2,7 @@
     <div class="row mb-3">
         <div class="container justify-content-center">
             <div class="row">
-                <img [src]="imagePrefix+chosenImage.url" [alt]="chosenImage.name" class="img-fluid col-12 col-lg-9">
+                <img [src]="imagePrefix+chosenImage.url" [alt]="chosenImage.name" style="object-fit: contain; max-height: 70vh;" class="img-fluid col-12 col-lg-9">
                 <div class="col-12 col-lg-3 d-flex flex-column justify-content-center">
                     <a class="btn btn-primary m-3"
                         [href]="imagePrefix+chosenImage.url"
@@ -23,20 +23,22 @@
 
     <div class="row justify-content-start gap-3">
         <div class="col-12 col-lg-2 card h-100 shadow mb-2 p-0" *ngFor="let image of images">
-            <img style="cursor: pointer;" src="{{imagePrefix}}{{thumbPrefix}}{{image.url}}"
+            <img style="cursor: pointer; object-fit: contain;" src="{{imagePrefix}}{{thumbPrefix}}{{image.url}}"
                 alt="{{image.name}}" class="card-img-top"
                 (click)="chooseImage(image)">
             <div class="card-body text-center">
                 <p class="text-uppercase">{{image.name.length < 10 ? image.name : image.name.substring(0, 10) + '...'}}</p>
+                <p>Kiterjesztés: {{image.url.substring(image.url.indexOf('.')+1).toUpperCase()}}</p>
+                <p>Kategória: {{image.category.name}}</p>
             </div>
         </div>
     </div>
+    <div class="row w-100">
+        <mat-paginator #paginator [hidePageSize]="true" (page)="handlePageEvent($event)" [length]="numberOfImages"
+            [pageSize]="pageSize" [showFirstLastButtons]="true" [pageIndex]="pageIndex" aria-label="Select page">
+        </mat-paginator>
+    </div>
 </main>
-<div class="row">
-    <mat-paginator #paginator [hidePageSize]="true" (page)="handlePageEvent($event)" [length]="numberOfImages"
-        [pageSize]="pageSize" [showFirstLastButtons]="true" [pageIndex]="pageIndex" aria-label="Select page">
-    </mat-paginator>
-</div>
 
 <div class="container mt-5 text-center" *ngIf="images.length == 0">
     <h1>Még nem választott kedvenc képeket!</h1>

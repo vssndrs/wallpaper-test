@@ -5,5 +5,6 @@ export interface Image {
     name: string;
     url: string;
     categoryId: number;
-    category: Category
+    category: Category;
+    orientation: string;
 }

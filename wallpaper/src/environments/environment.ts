@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  thumbPrefix: 'c_thumb,w_300,g_face/',
+  thumbPrefix: 'c_thumb,w_300,h_250/',
   imagePrefix: 'https://res.cloudinary.com/dpl0wn9vl/image/upload/',
 };
 
