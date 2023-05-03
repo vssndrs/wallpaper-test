@@ -71,4 +71,8 @@ export class ImageService {
     return this.http.get<Image[]>(`http://localhost:3000/images?categoryId=${id}&_limit=1`);
   }
 
+  getCategoryById(id: number): Observable<Category> {
+    return this.http.get<Category>(`http://localhost:3000/categories/${id}`);
+  }
+
 }

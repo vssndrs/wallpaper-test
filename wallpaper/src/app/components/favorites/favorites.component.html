@@ -21,7 +21,7 @@
         <button (click)="clearFavorites()" class="btn btn-primary">Kedvencek kiürítése</button>
     </div>
 
-    <div class="row justify-content-start gap-5 ms-3">
+    <div class="row justify-content-start gap-3">
         <div class="col-12 col-lg-2 card h-100 shadow mb-2 p-0" *ngFor="let image of images">
             <img style="cursor: pointer;" src="{{imagePrefix}}{{thumbPrefix}}{{image.url}}"
                 alt="{{image.name}}" class="card-img-top"

@@ -21,6 +21,7 @@ export class CategoryComponent implements OnInit {
   pageSize = 5;
   images : Image[] = [];
   chosenImage!: Image;
+  categoryName!: string;
 
   pageEvent?: PageEvent;
 
@@ -32,6 +33,7 @@ export class CategoryComponent implements OnInit {
   ngOnInit(): void {
     this.getlength();
     this.getImages(this.categoryId, this.pageIndex, this.pageSize);
+    this.getCategoryName();
     this.getFirstImage();
   }
 
@@ -39,6 +41,14 @@ export class CategoryComponent implements OnInit {
     this.imageService.getImagesByCategory(categoryId, pageIndex + 1, pageSize).subscribe({
       next: images => {
         this.images = images;
+      }
+    });
+  }
+
+  getCategoryName() {
+    this.imageService.getCategoryById(this.categoryId).subscribe({
+      next: category => {
+        this.categoryName = category.name;
       }
     });
   }
