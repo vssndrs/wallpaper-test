@@ -27,189 +27,216 @@
         "name": "sunlight_nap-wallpaper",
         "url": "v1683024263/wallpapers/sunlight_nap-wallpaper-1024x768_rokjwf.jpg",
         "categoryId": 1,
-        "orientation": "wide"
+        "orientation": "wide",
+        "size": 163
     },
     {
         "id": "2",
         "name": "snarling_tiger-wallpaper",
         "url": "v1683024252/wallpapers/snarling_tiger-wallpaper-1024x768_xfchqw.jpg",
         "categoryId": 1,
-        "orientation": "wide"
+        "orientation": "wide",
+        "size": 376
     },
     {
         "id": "3",
         "name": "sad_eyes_2-wallpaper",
         "url": "v1683024246/wallpapers/sad_eyes_2-wallpaper-1024x768_f3f6gr.jpg",
         "categoryId": 1,
-        "orientation": "wide"
+        "orientation": "wide",
+        "size": 236
     },
     {
         "id": "4",
         "name": "lion_5-wallpaper",
         "url": "v1683024237/wallpapers/lion_5-wallpaper-1024x768_s4rpbi.jpg",
         "categoryId": 1,
-        "orientation": "wide"
+        "orientation": "wide",
+        "size": 328
     },
     {
         "id": "5",
         "name": "white_leopard-wallpaper",
         "url": "v1683024162/wallpapers/white_leopard-wallpaper-1024x768_jqgqzl.jpg",
         "categoryId": 1,
-        "orientation": "wide"
+        "orientation": "wide",
+        "size": 335
     },
     {
         "id": "6",
         "name": "cute_pembroke_welsh_corgi_puppies_running-wallpaper",
         "url": "v1683024162/wallpapers/cute_pembroke_welsh_corgi_puppies_running-wallpaper-1024x768_vjv8me.jpg",
         "categoryId": 1,
-        "orientation": "wide"
+        "orientation": "wide",
+        "size": 247
     },
     {
         "id": "7",
         "name": "cute_husky_puppy-wallpaper",
         "url": "v1683024162/wallpapers/cute_husky_puppy-wallpaper-1024x768_l8ppdf.jpg",
         "categoryId": 1,
-        "orientation": "wide"
+        "orientation": "wide",
+        "size": 320
     },
     {
         "id": "8",
         "name": "cute_rottweiler_puppy-wallpaper",
         "url": "v1683024162/wallpapers/cute_rottweiler_puppy-wallpaper-1024x768_ajq0gm.jpg",
         "categoryId": 1,
-        "orientation": "wide"
+        "orientation": "wide",
+        "size": 184
     },
     {
         "id": "9",
         "name": "white_wolves_pack_2-wallpaper",
         "url": "v1683024162/wallpapers/white_wolves_pack_2-wallpaper-1024x768_xayxx3.jpg",
         "categoryId": 1,
-        "orientation": "wide"
+        "orientation": "wide",
+        "size": 275
     },
     {
         "id": "10",
         "name": "white_tiger-wallpaper",
         "url": "v1683024162/wallpapers/white_tiger-wallpaper-1024x768_hg10a7.jpg",
         "categoryId": 1,
-        "orientation": "wide"
+        "orientation": "wide",
+        "size": 344
     },
     {
         "id": "11",
         "name": "dolphin_6-wallpaper",
         "url": "v1683024162/wallpapers/dolphin_6-wallpaper-1024x768_la4stn.jpg",
         "categoryId": 1,
-        "orientation": "wide"
+        "orientation": "wide",
+        "size": 180
     },
     {
         "id": "12",
         "name": "alaska_range_beautiful_mountain_landscape-wallpaper",
         "url": "v1683029036/wallpapers/alaska_range_beautiful_mountain_landscape-wallpaper-1024x768_wtjpwj.jpg",
         "categoryId": 2,
-        "orientation": "wide"
+        "orientation": "wide",
+        "size": 470
     },
     {
         "id": "13",
         "name": "rainforest_waterfall-wallpaper",
         "url": "v1683029064/wallpapers/rainforest_waterfall-wallpaper-1024x768_oq4ord.jpg",
         "categoryId": 2,
-        "orientation": "wide"
+        "orientation": "wide",
+        "size": 390
     },
     {
         "id": "14",
         "name": "dream_places-wallpaper",
         "url": "v1683029091/wallpapers/dream_places-wallpaper-1024x768_g0lrdy.jpg",
         "categoryId": 2,
-        "orientation": "wide"
+        "orientation": "wide",
+        "size": 364
     },
     {
         "id": "15",
         "name": "beach_nature_7-wallpaper",
         "url": "v1683029125/wallpapers/beach_nature_7-wallpaper-1024x768_nlmpbl.jpg",
         "categoryId": 2,
-        "orientation": "wide"
+        "orientation": "wide",
+        "size": 286
     },
     {
         "id": "16",
         "name": "hills_landscape-wallpaper",
         "url": "v1683029151/wallpapers/hills_landscape-wallpaper-1024x768_kemqle.jpg",
         "categoryId": 2,
-        "orientation": "wide"
+        "orientation": "wide",
+        "size": 255
     },
     {
         "id": "17",
         "name": "nature_245-wallpaper",
         "url": "v1683029174/wallpapers/nature_245-wallpaper-1024x768_l8ofml.jpg",
         "categoryId": 2,
-        "orientation": "wide"
+        "orientation": "wide",
+        "size": 329
     },
     {
         "id": "18",
         "name": "lamborghini_aventador_9",
         "url": "v1683029480/wallpapers/lamborghini_aventador_9-wallpaper-1024x768_ftatdf.jpg",
         "categoryId": 3,
-        "orientation": "wide"
+        "orientation": "wide",
+        "size": 183
     },
     {
         "id": "19",
         "name": "red_lamborghini_aventador_s_roadster-wallpaper",
         "url": "v1683029351/wallpapers/red_lamborghini_aventador_s_roadster-wallpaper-1024x768_y7quu3.jpg",
         "categoryId": 3,
-        "orientation": "wide"
+        "orientation": "wide",
+        "size": 249
     },
     {
         "id": "20",
         "name": "lamborghini_dark-wallpaper",
         "url": "v1683029432/wallpapers/lamborghini_dark-wallpaper-1024x768_xpaimt.jpg",
         "categoryId": 3,
-        "orientation": "wide"
+        "orientation": "wide",
+        "size": 60
     },
     {
         "id": "21",
         "name": "lamborghini_47-wallpaper",
         "url": "v1683029453/wallpapers/lamborghini_47-wallpaper-1024x768_nakcyu.jpg",
         "categoryId": 3,
-        "orientation": "wide"
+        "orientation": "wide",
+        "size": 123
     },
     {
         "id": "22",
         "name": "black_lamborghini_aventador_supercar-wallpaper",
         "url": "v1683029516/wallpapers/black_lamborghini_aventador_supercar-wallpaper-1024x768_ubajkg.jpg",
         "categoryId": 3,
-        "orientation": "wide"
+        "orientation": "wide",
+        "size": 144
     },
     {
         "id": "23",
         "name": "lamborghini_aventador-wallpaper",
         "url": "v1683029538/wallpapers/lamborghini_aventador-wallpaper-1024x768_dfosrc.jpg",
         "categoryId": 3,
-        "orientation": "wide"
+        "orientation": "wide",
+        "size": 141
     },
     {
         "id": "24",
         "name": "2016_mercedes_benz_amg_gt_s-wallpaper",
         "url": "v1683126369/wallpapers/2016_mercedes_benz_amg_gt_s-wallpaper-540x960_lpgnvc.jpg",
         "categoryId": 3,
-        "orientation": "horizontal"
+        "orientation": "horizontal",
+        "size": 169
     },
     {
         "id": "25",
         "name": "earth_from_space_2-wallpaper",
         "url": "v1683128720/earth_from_space_2-wallpaper-1024x768_cme2v1.jpg",
         "categoryId": 4,
-        "orientation": "wide"
+        "orientation": "wide",
+        "size": 156
     },
     {
         "id": "26",
         "name": "ghost_nebula-wallpaper",
         "url": "v1683128720/ghost_nebula-wallpaper-1024x768_x2dxpi.jpg",
         "categoryId": 4,
-        "orientation": "wide"
+        "orientation": "wide",
+        "size": 161
     },
     {
         "id": "27",
         "name": "apple_10-wallpaper",
         "url": "v1683128721/apple_10-wallpaper-1024x768_tsa6f1.jpg",
         "categoryId": 4,
-        "orientation": "wide"
+        "orientation": "wide",
+        "size": 273
     }
 ]
 }

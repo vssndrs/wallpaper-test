@@ -7,4 +7,5 @@ export interface Image {
     categoryId: number;
     category: Category;
     orientation: string;
+    size: number;
 }

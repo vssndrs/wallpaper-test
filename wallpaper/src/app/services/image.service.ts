@@ -54,8 +54,8 @@ export class ImageService {
     return this.http.get<Category[]>('http://localhost:3000/categories?_embed=images');
   }
 
-  getImages(): Observable<Image[]> {
-    return this.http.get<Image[]>('http://localhost:3000/images?_expand=category');
+  getImages(query:string): Observable<Image[]> {
+    return this.http.get<Image[]>(`http://localhost:3000/images?_expand=category&${query}`);
   }
 
   getImagesByCategory(id: number, page?: number, limit?: number): Observable<Image[]> {
