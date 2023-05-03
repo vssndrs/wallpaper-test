@@ -32,25 +32,23 @@ export class CategoryComponent implements OnInit {
   ngOnInit(): void {
     this.getlength();
     this.getImages(this.categoryId, this.pageIndex, this.pageSize);
+    this.getFirstImage();
   }
 
   getImages(categoryId: number, pageIndex: number, pageSize: number | undefined) {
     this.imageService.getImagesByCategory(categoryId, pageIndex + 1, pageSize).subscribe({
       next: images => {
         this.images = images;
-        this.chosenImage = images[0];
       }
     });
   }
 
-  downloadImage(image: Image) {
-    // download image
-    const link = document.createElement('a');
-    link.href = this.imagePrefix + image.url;
-    link.download = image.name;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+  getFirstImage() {
+    this.imageService.getFirstImageByCategory(this.categoryId).subscribe({
+      next: image => {
+        this.chosenImage = image[0];
+      }
+    });
   }
 
   chooseImage(image: Image) {

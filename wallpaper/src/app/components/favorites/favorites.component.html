@@ -1,1 +1,43 @@
-<p>favorites works!</p>
+<main class="container mt-3" *ngIf="images && chosenImage">
+    <div class="row mb-3">
+        <div class="container justify-content-center">
+            <div class="row">
+                <img [src]="imagePrefix+chosenImage.url" [alt]="chosenImage.name" class="img-fluid col-12 col-lg-9">
+                <div class="col-12 col-lg-3 d-flex flex-column justify-content-center">
+                    <a class="btn btn-primary m-3"
+                        [href]="imagePrefix+chosenImage.url"
+                        download="{{chosenImage.name}}"
+                        target="_blank"
+                    >
+                        Letöltés
+                    </a>
+                    <button class="btn btn-primary m-3" (click)="removeFromFav(chosenImage)">Eltávolítás</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <button (click)="clearFavorites()" class="btn btn-primary">Kedvencek kiürítése</button>
+    </div>
+
+    <div class="row justify-content-start gap-5 ms-3">
+        <div class="col-12 col-lg-2 card h-100 shadow mb-2 p-0" *ngFor="let image of images">
+            <img style="cursor: pointer;" src="{{imagePrefix}}{{thumbPrefix}}{{image.url}}"
+                alt="{{image.name}}" class="card-img-top"
+                (click)="chooseImage(image)">
+            <div class="card-body text-center">
+                <p class="text-uppercase">{{image.name.length < 10 ? image.name : image.name.substring(0, 10) + '...'}}</p>
+            </div>
+        </div>
+    </div>
+</main>
+<div class="row">
+    <mat-paginator #paginator [hidePageSize]="true" (page)="handlePageEvent($event)" [length]="numberOfImages"
+        [pageSize]="pageSize" [showFirstLastButtons]="true" [pageIndex]="pageIndex" aria-label="Select page">
+    </mat-paginator>
+</div>
+
+<div class="container mt-5 text-center" *ngIf="images.length == 0">
+    <h1>Még nem választott kedvenc képeket!</h1>
+</div>

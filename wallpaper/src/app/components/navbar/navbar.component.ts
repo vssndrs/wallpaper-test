@@ -20,9 +20,12 @@ export class NavbarComponent implements OnInit {
       let images = JSON.parse(localStorage.getItem('favoriteImages')!);
       this.imageService.setFavoriteImages(images);
     }
-    this.favoriteImages = this.imageService.getFavoriteImages();
+
+    this.getFavoriteImages();
   }
 
-  
+  getFavoriteImages() {
+    this.favoriteImages = this.imageService.getFavoriteImages();
+  }
 
 }
