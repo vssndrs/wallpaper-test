@@ -1,6 +1,8 @@
 # Indítás
 
-Az alkalmazás lebuildelve a `dist` mappában található, tetszőleges http szerveren futtatható.
+Az alkalmazás lebuildelve a `dist` mappában található, tetszőleges http szerveren futtatható, vagy angular cli segítségével a `wallpaper` mappában állva:
+
+```ng serve```
 
 A frontendet egy mock json-server látja el adatokkal, a `data` mappában található `data.json` fájlból. A mock szerver telepítése:
 
