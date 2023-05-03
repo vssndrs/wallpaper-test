@@ -1,3 +1,16 @@
+# Indítás
+
+Az alkalmazás lebuildelve a `dist` mappában található, tetszőleges http szerveren futtatható.
+
+A frontendet egy mock json-server látja el adatokkal, a `data` mappában található `data.json` fájlból. A mock szerver telepítése:
+
+```npm install -g json-server```
+
+A mock szerver indítása a `data` mappában állva:
+
+```json-server --watch data.json```
+
+
 ## Próbafeladat - Wallpaper gyűjtő weboldal
 A feladat rövid leírása:
 
